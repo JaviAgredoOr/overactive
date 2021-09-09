@@ -87,7 +87,15 @@ public class Purchase implements Serializable {
 	public void setPoints(Integer points) {
 		this.points = points;
 	}
-	
+
+	public Long getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(Long customerId) {
+		this.customerId = customerId;
+	}
+
 	public String getMonth() {
 		return DateUtils.getMonth(this.getDate());
 	}
